@@ -4,6 +4,7 @@ import Slider from './components/Slider'
 import Search from './components/Search'
 import IconBoxes from './components/IconBoxes'
 import PopularPlaces from './components/PopularPlaces'
+import Follow from './components/Follow'
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <Search />
         <IconBoxes />
         <PopularPlaces />
+        <Follow />
       </React.Fragment>
     )
   }

@@ -9,7 +9,7 @@ const Navbar = () => {
           <div className="container">
             <div className="nav-wrapper">
               <a href="#!" className="brand-logo">
-                Travelville
+                React Materialize Travelville
               </a>
               <a href="#!" data-target="mobile-nav" className="sidenav-trigger">
                 <i className="material-icons">menu</i>
