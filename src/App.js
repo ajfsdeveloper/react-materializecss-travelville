@@ -7,6 +7,7 @@ import PopularPlaces from './components/PopularPlaces'
 import Follow from './components/Follow'
 import Gallery from './components/Gallery'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
         <Follow />
         <Gallery />
         <Contact />
+        <Footer />
       </React.Fragment>
     )
   }
