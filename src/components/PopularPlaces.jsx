@@ -1,5 +1,11 @@
 import React from 'react'
 
+const places = [
+  { name: 'resort_1', title: 'Cancun, Mexico' },
+  { name: 'resort_2', title: 'The Bahamas' },
+  { name: 'resort_3', title: 'Nova Scotia' }
+]
+
 const PopularPlaces = () => {
   return (
     <section id="popular" className="section section-popular scrollspy">
@@ -8,42 +14,23 @@ const PopularPlaces = () => {
           <h4 className="center">
             <span className="blue-text">Popular</span> Places
           </h4>
-          <div className="col s12 m4">
-            <div className="card small">
-              <div className="card-image">
-                <img src="/assets/images/resort_1.jpg" alt="resort_1" />
-                <span className="card-title">Cancun, Mexico</span>
-              </div>
-              <div className="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                assumenda fugiat numquam, explicabo cum dignissimos.
-              </div>
-            </div>
-          </div>
-          <div className="col s12 m4">
-            <div className="card small">
-              <div className="card-image">
-                <img src="/assets/images/resort_2.jpg" alt="resort_2" />
-                <span className="card-title">The Bahamas</span>
-              </div>
-              <div className="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                assumenda fugiat numquam, explicabo cum dignissimos.
+          {places.map(place => (
+            <div className="col s12 m4" key={place.name}>
+              <div className="card small">
+                <div className="card-image">
+                  <img
+                    src={`/assets/images/${place.name}.jpg`}
+                    alt={place.name}
+                  />
+                  <span className="card-title">{place.title}</span>
+                </div>
+                <div className="card-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  assumenda fugiat numquam, explicabo cum dignissimos.
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col s12 m4">
-            <div className="card small">
-              <div className="card-image">
-                <img src="/assets/images/resort_3.jpg" alt="resort_3" />
-                <span className="card-title">Nova Scotia</span>
-              </div>
-              <div className="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                assumenda fugiat numquam, explicabo cum dignissimos.
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
