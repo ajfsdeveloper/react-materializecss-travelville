@@ -20,7 +20,7 @@ const sliderData = [
 
 const Slider = () => {
   return (
-    <div className="slider">
+    <section className="slider">
       <ul className="slides">
         {sliderData.map(slider => (
           <li key={slider.name}>
@@ -36,7 +36,7 @@ const Slider = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   )
 }
 

@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <div className="navbar-fixed">
-        <nav className="blue darken-4">
+        <nav className="blue">
           <div className="container">
             <div className="nav-wrapper">
               <a href="#!" className="brand-logo">

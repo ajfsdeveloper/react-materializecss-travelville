@@ -33,7 +33,7 @@
   <title>React Materialize Travelville</title>
 </head>
 
-<body>
+<body id="home" class="scrollspy">
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>
@@ -55,18 +55,36 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       // Sidenav
-      const sideNav = document.querySelector('.sidenav');
-      M.Sidenav.init(sideNav, {});
+      const sideNav = document.querySelector('.sidenav')
+
+      M.Sidenav.init(sideNav, {})
 
       // Slider
-      const slider = document.querySelector('.slider');
+      const slider = document.querySelector('.slider')
+
       M.Slider.init(slider, {
         indicators: false,
         height: 500,
         duration: 500,
         interval: 6000
-      });
-    });
+      })
+
+      // Autocomplete
+      const ac = document.querySelector('.autocomplete')
+      M.Autocomplete.init(ac, {
+        data: {
+          "Aruba": null,
+          "Cancun Mexico": null,
+          "Hawaii": null,
+          "Florida": null,
+          "California": null,
+          "Jamacia": null,
+          "Europe": null
+        },
+        limit: 3,
+        minLength: 1
+      })
+    })
   </script>
 </body>
 
