@@ -6,6 +6,7 @@ import IconBoxes from './components/IconBoxes'
 import PopularPlaces from './components/PopularPlaces'
 import Follow from './components/Follow'
 import Gallery from './components/Gallery'
+import Contact from './components/Contact'
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <PopularPlaces />
         <Follow />
         <Gallery />
+        <Contact />
       </React.Fragment>
     )
   }
